@@ -1,11 +1,15 @@
 #include <iostream>
-using namespace std;
+// Удаляем строку: using namespace std;
 
 int main() {
-    string name; 
-    cout << "Введите ваше имя: ";
-    cin >> name;
-    cout << "Hello world from " << name << endl;
+    std::string name; // Переменная для хранения имени пользователя
 
-    return 0;
+    // Запрашиваем имя пользователя
+    std::cout << "Введите ваше имя: "; // Выводим запрос на ввод имени
+    std::cin >> name; // Считываем имя пользователя из ввода
+
+    // Выводим приветственное сообщение с именем пользователя
+    std::cout << "Hello world from " << name << std::endl; // Используем endl для перехода на новую строку
+
+    return 0; // Завершаем программу
 }
